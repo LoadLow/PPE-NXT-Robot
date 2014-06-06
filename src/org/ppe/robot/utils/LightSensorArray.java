@@ -1,4 +1,4 @@
-package org.ppe.robot.sensors;
+package org.ppe.robot.utils;
 
 import lejos.nxt.I2CPort;
 import lejos.nxt.I2CSensor;
@@ -105,6 +105,15 @@ public class LightSensorArray extends I2CSensor {
         		average+=array[i];
         	}
         	return (int)average/8;
+    	}
+    	
+    	public boolean hasIntensity(int intensity){
+    		for(int i=0; i < 8; i++){
+        		if(array[i] <= intensity){
+        			return true;
+        		}
+        	}
+    		return false;
     	}
     	
     }
