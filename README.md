@@ -1,7 +1,7 @@
-PPE-NXT-Robot
+PPE-NXT-Robot SUMO
 =================
 
->>Robot controller using leJOS Java SDK
+>>Robot SUMO controller using leJOS Java SDK
 
 <h4>Requirements</h4>
 * I'm using [Eclipse IDE](https://www.eclipse.org/) with leJOS plugin
